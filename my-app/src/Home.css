@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); 
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-brand:hover {
+    color: #f0a500; 
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .navbar-links a:hover {
+    color: #f0a500; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.05); 
+  }
+  
+  
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 70px);
+    padding: 20px;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .banner-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .content-container {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+    padding: 20px; }
+  
+ 
+  .content-container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    color: black; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .login-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #0f2027; 
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .login-link:hover {
+    background-color: #f0a500; 
+    color: #0f2027; 
+  }
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .banner-image {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
